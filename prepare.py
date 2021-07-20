@@ -12,7 +12,7 @@ def active_status(df, date, start, end):
     df['is_active'] = (date >= df[start]) & (date <= df[end])
     return df
 
-def make_datetime(df, col_name):
+def make_datetime(df, col_name, set_index = False):
     '''
     This function takes in a dataframe 
     A column name of the column that is your date (as string)
