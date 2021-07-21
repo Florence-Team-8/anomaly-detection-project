@@ -25,3 +25,34 @@ def make_datetime(df, col_name, set_index = False):
     else:
         df[col_name] = pd.to_datetime(df[col_name])
     return df
+
+def get_lower_and_upper_bounds(col, multiplier=1.5):
+    # calculate quantiles with pd.quantile()
+    q1 = col.quantile(0.25)
+    q3 = col.quantile(0.75)
+    # then calculate iqr to calculate the upper/lower bounds
+    iqr = q3 - q1   
+    lower_bound = round(q1 -(multiplier * iqr), 3)
+    upper_bound = round(q3 +(multiplier * iqr), 3)
+    
+    return lower_bound, upper_bound
+
+def iqr_outliers(df, multiplier=1.5):
+    # create empty outlier dictionary to hold values
+    outliers = {}
+    for col in df.columns:
+        # select only columns with a number dtype
+        if np.issubdtype(df[col].dtype, np.number):
+            # get lower and upper bounds from other function
+            lower_bound, upper_bound = get_lower_and_upper_bounds(df[col], multiplier=multiplier)
+            print(f' {col}: \n upper bound: {upper_bound}\n lower bound: {lower_bound}\n')
+            # create a new dict value for each column in the df
+            outliers[col] = {}
+            # store upper and lower bounds
+            outliers[col]['bounds'] = {'upper' : upper_bound, 'lower' : lower_bound}
+            # save outliers that fall below the lower bound and above the upper band
+            outliers[col]['outlier'] = df[(df[col] > upper_bound) |  (df[col] < lower_bound)]
+        else:
+            pass
+    # list comprehension that prints each outlier seperated by column
+    [print('\n', key, ':\n', outliers[key]['outlier']) for key in outliers]
