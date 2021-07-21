@@ -40,8 +40,20 @@ def acquire_curriculum_logs(csv_name = "anonymized-curriculum-access-07-2021.txt
     return df
 
 ###################### Acquire for cohort data ######################
+def get_full_cohort_data():
+    '''
+    This function takes care of getting the cohort data from the compiled CSV
+    Ensure the data is called 'full_cohort_list.csv'
+    '''
+
+    cohorts = pd.read_csv('full_cohort_list.csv')
+
+    return cohorts
+
+
 def get_cohort_data():
     '''
+    DEPRECIATED: USE GET FULL COHORT DATA AND PULL FROM CSV INSTEAD OF SQL DB
     This function takes care of getting the cohort data from the SQL db
     Need env file to make work
     '''
@@ -62,12 +74,15 @@ def get_joined_curriculum_data():
 
     df = acquire_curriculum_logs()
 
-    df2 = get_cohort_data()
+    df2 = get_full_cohort_data()
 
     df_merge = df.merge(df2, left_on='cohort_id', right_on= 'id', how = 'left')
 
     cols_to_drop = ['id', 'created_at', 'updated_at', 'deleted_at', 'slack']
 
     df_merge = df_merge.drop(columns = cols_to_drop)
+    
+    # fill the nulls with 0s
+    df_merge = df_merge.fillna(value = 0)
 
     return df_merge
