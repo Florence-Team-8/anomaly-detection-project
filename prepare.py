@@ -56,3 +56,21 @@ def iqr_outliers(df, multiplier=1.5):
             pass
     # list comprehension that prints each outlier seperated by column
     [print('\n', key, ':\n', outliers[key]['outlier']) for key in outliers]
+    
+
+
+def filter_endpoints(df):
+    '''
+    This function filters out the following endpoints
+    /
+    toc
+    contains the following strings: search, jpg, jpeg, svg
+    Returns the dataframe with those endpoints removed
+    '''
+    # step one get rid of endpoints that are only '/'
+    df2 = df[df.endpoint != '/']
+
+    # step 2 get rid of everything tat contains the following
+    df_final = df2[df2.endpoint.str.contains('toc|search|jpg|jpeg|svg') == False]
+    
+    return df_final
