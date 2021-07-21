@@ -36,7 +36,8 @@ def acquire_curriculum_logs(csv_name = "anonymized-curriculum-access-07-2021.txt
                  sep="\s", 
                  header=None, 
                  names = colnames, 
-                 usecols=[0, 2, 3, 4, 5])
+                 usecols=[0, 2, 3, 4, 5],
+                 engine = 'python')
     return df
 
 ###################### Acquire for cohort data ######################
