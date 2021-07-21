@@ -37,7 +37,7 @@ The below endpoints have 35 page views each
    •  5-stats/Selecting_a_hypothesis_test.svg             
    •  7_Exercises                                         
    •  8-clustering/1-overview                             
-   •  8-clustering/project                                
+   •  8-clustering/project 
    •  9-timeseries/5.1-modeling-lesson1                   
  - 3 (Data Science)
    • 4-python/8.1-ds-libraries-overview 
