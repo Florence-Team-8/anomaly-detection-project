@@ -78,7 +78,7 @@ def get_joined_curriculum_data():
 
     df_merge = df.merge(df2, left_on='cohort_id', right_on= 'id', how = 'left')
 
-    cols_to_drop = ['created_at', 'updated_at', 'deleted_at', 'slack']
+    cols_to_drop = ['id', 'created_at', 'updated_at', 'deleted_at', 'slack']
 
     df_merge = df_merge.drop(columns = cols_to_drop)
     
