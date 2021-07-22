@@ -1,4 +1,4 @@
-![image](https://github.com/Florence-Team-8/anomaly-detection-project/files/6863784/Detecting.Anomolous.Network.Access.Project.pdf)
+![image](https://github.com/Florence-Team-8/anomaly-detection-project/files/6863800/Detecting.Anomolous.Network.Access.Project.pdf)
 
 
 
@@ -43,7 +43,7 @@ Program ID Codes
 
 #### Which lesson appears to attract the most traffic consistently across cohorts (per program)?
 
-> Javascript-i had the most traffic for both the Full Stack PHP & Java programs. This makes sense since JavaScript is a highly used programming language for web > developers because it allows users to interact with web pages.  While the most accessed for Data Science was the classification overview.  The Classification      > Methodology is the most used for Supervised Learning.
+> Javascript-i had the most traffic for both the Full Stack PHP & Java programs. This makes sense since JavaScript is a highly used programming language for web developers because it allows users to interact with web pages.  While the most accessed for Data Science was the classification overview.  The Classification      Methodology is the most used for Supervised Learning.
 
 #### 7. Which lessons are least accessed?
 
