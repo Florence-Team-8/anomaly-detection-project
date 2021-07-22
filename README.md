@@ -80,11 +80,11 @@ Program 4 (Front End Program) was not used in the responses for the most and lea
 > Both types of lessons accessed contain material that would be used quite frequently in a career.
 
 
-<hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
+<hr style="border-top: 10px groove #8a2be2; margin-top: 1px; margin-bottom: 1px"></hr>
 
 ### Reproduce Our Project
 
-<hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>The curriculum access log data was acquired from the txt file provided. 
+<hr style="border-top: 10px groove #8a2be2; margin-top: 1px; margin-bottom: 1px"></hr>The curriculum access log data was acquired from the txt file provided. 
 
 The cohort data from the SQL database and information provided by Mr Zach Gulde. 
 
