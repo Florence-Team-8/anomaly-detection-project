@@ -78,6 +78,7 @@ Program 4 (Front End Program) was not used in the responses for the most and lea
 
 The cohort data from the SQL database and information provided by Mr Zach Gulde. 
 
+- [X] Read this README.md
 - [ ] The full cohort data needed to reproduce this notebook can be found [here](https://docs.google.com/spreadsheets/d/11g_qJf7VD989pvzOZIYkVZZc7xip4L5Cysifx_V6dIk/edit?usp=sharing) and needs to be downloaded as a csv to your working directory. 
 - [ ] Ensure you have both the txt file named `anonymized-curriculum-access-07-2021.txt` and the csv named `full_cohort_list.csv` in order for the acquire to go smoothly.
 - [ ] Nulls were filled in with 0s for the purpose of this exploration.
