@@ -70,6 +70,8 @@ The below endpoints have 34 page views each
 
 Program 4 (Front End Program) was not used in the responses for the most and least accessed endpoints since it was a test group. Full Stack PHP & Java did not have similar low accessed endpoints as they did for the most accessed endpoints. There least accessed included some Data Science pages while the lows for Data Science were lessons that are least used in Data Science.
 
+<hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
+
 ### Reproduce Our Project
 
 <hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>The curriculum access log data was acquired from the txt file provided. 
