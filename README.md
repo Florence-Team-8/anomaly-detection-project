@@ -1,10 +1,10 @@
-![image](https://github.com/Florence-Team-8/anomaly-detection-project/files/6863800/Detecting.Anomolous.Network.Access.Project.pdf)
+![image](https://user-images.githubusercontent.com/80718680/126676948-7fc31166-47a0-4153-98b1-2877955ac0e1.png)
 
 
 
 Hello,
 
-Welcome to the README file for our "Anomaly Detection Project".
+Welcome to the README file for our "Detecting Anomalous Network Access Project".
 
 
 _________________
@@ -34,23 +34,35 @@ _________________
 | `is_active`  | Boolean value of whether or not the student was active in a cohort when the request was made | int64 (boolean)                                    |
 | `pings`      | Numeric column for aggregating active and inactive pings                                     | int64                                              |
 
-Program ID Codes
+**Program ID Codes** 
+
 1 - Full stack PHP
+
 2 - Java
+
 3 - Data Science
+
 4 - Front End Program
 
-
+---- 
 #### Which lesson appears to attract the most traffic consistently across cohorts (per program)?
 
-> Javascript-i had the most traffic for both the Full Stack PHP & Java programs. This makes sense since JavaScript is a highly used programming language for web developers because it allows users to interact with web pages.  While the most accessed for Data Science was the classification overview.  The Classification      Methodology is the most used for Supervised Learning.
+> Javascript-i had the most traffic for both the Full Stack PHP & Java programs. This makes sense since JavaScript is a highly used programming language for web developers because it allows users to interact with web pages.  While the most accessed for Data Science was the classification overview.  The Classification Methodology is the most used for Supervised Learning.
 
-#### 7. Which lessons are least accessed?
+#### Which lessons are least accessed?
 
-> Program 4 (Front End Program) was not used in the responses for the most and least accessed endpoints since it was a test group. Full Stack PHP & Java did not > have similar low accessed endpoints as they did for the most accessed endpoints. There least accessed included some Data Science pages while the lows for Data > Science were lessons that are least used in Data Science.
+> Full Stack PHP & Java did not  have similar low accessed endpoints as they did for the most accessed endpoints. The lowest accessed for Full stack program was classes and objects lessons and object oriented programming. For the Java program, it was a Power analysis lesson. 
 
+> The lowest accessed pages for Data Science included the storytelling creating dashboards lesson, and several pages in the advanced topics section (developing data products). 
+Program 4 (Front End Program) was not used in the responses for the most and least accessed endpoints since it was a test group.
 
-#### 3. Are there students who, when active, hardly access the curriculum? If so, what information do you have about these students?
+#### Is there a cohort that referred to a lesson significantly more, that other cohorts seemed to gloss over?
+
+> Data Science cohorts (program ID 3), at first glance, appear to be viewing different lessons more often. But based on the knowledge of how the curriculum has changed over time, this seems reasonable. While all cohorts (minus Darden) had some version of the intro to data science lesson on there, Darden's lower view count on this could be explained by the curriculum changing during their tenure). Early cohorts (Bayes and Curie) viewed the regression overview lesson much more than the other cohorts, while from Darden onward the Classification Overview lesson was by far the most viewed. The change in the curriculum (to teaching classification first before regression) could be the cause of this as well. 
+
+> Web development students (program ID 2) appear to be accessing the same several lessons over and over across the cohorts (Java i, ii, iii, html-css, jquery, and spring). This may be due to the program and curriculum, being more established by this point. This suggests that these lessons are consistently valuable to the web dev students.
+
+#### Are there students who, when active, hardly access the curriculum? If so, what information do you have about these students?
 - Most of the pings are either towards the end of the program, or immediately the day after
 - Some have a lot of pings at the beginning of the program start and stop once it hits two weeks
 - about a third only ping the day of the program start or after
@@ -60,7 +72,7 @@ Program ID Codes
 >Users 487, 1060 and 1065 accessed the curriculum within two weeks of the start date
 >889 and 1059 access the database over a week or two and then stops.
 
-#### 6. What topics are grads continuing to reference after graduation and into their jobs (for each program)?
+#### What topics are grads continuing to reference after graduation and into their jobs (for each program)?
 >DS students ping the system the most after graduation. Mostly fundamentals looking at general info about pipeline. 
 >The fifth through eleventh most pinged sites for graduates is web dev style looking at creating files and navigating the file system. 
 > Both groups are looking at lessons that are at the beginning of the lessons. 
@@ -79,4 +91,5 @@ The cohort data from the SQL database and information provided by Mr Zach Gulde.
 - [X] Read this README.md
 - [ ] The full cohort data needed to reproduce this notebook can be found [here](https://docs.google.com/spreadsheets/d/11g_qJf7VD989pvzOZIYkVZZc7xip4L5Cysifx_V6dIk/edit?usp=sharing) and needs to be downloaded as a csv to your working directory. 
 - [ ] Ensure you have both the txt file named `anonymized-curriculum-access-07-2021.txt` and the csv named `full_cohort_list.csv` in order for the acquire to go smoothly.
-- [ ] Nulls were filled in with 0s for the purpose of this exploration.
+- [ ] Clone this repo
+- [ ] Run the ad_project_final_notebook.ipynb
