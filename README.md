@@ -70,3 +70,9 @@ The below endpoints have 34 page views each
 
 Program 4 (Front End Program) was not used in the responses for the most and least accessed endpoints since it was a test group. Full Stack PHP & Java did not have similar low accessed endpoints as they did for the most accessed endpoints. There least accessed included some Data Science pages while the lows for Data Science were lessons that are least used in Data Science.
 
+### Reproduce My Project
+
+<hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>The curriculum access log data was acquired from the txt file provided. 
+
+The cohort data from the SQL database and information provided by Mr Zach Gulde. The full cohort data needed to reproduce this notebook can be found here and needs to be downloaded as a csv to your working directory. Ensure you have both the txt file named anonymized-curriculum-access-07-2021.txt and the csv named full_cohort_list.csv in order for the acquire to go smoothly.
+Nulls were filled in with 0s for the purpose of this exploration.
