@@ -13,6 +13,11 @@ The TRELLO board used for the planning process can be found on this link: [Trell
 
 _________________
 
+
+## Data Dictionary
+-  Please use this data dictionary as a reference for the variables used within in the data set.
+
+
 | Column Name  | Description                                                                                  | Type                                               |
 |--------------|----------------------------------------------------------------------------------------------|----------------------------------------------------|
 | `date`       | Date and time request was made                                                               | object (transformed to dateteime for some section) |
