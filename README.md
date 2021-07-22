@@ -1,4 +1,6 @@
-## Detecting Anomolous Network Access Project
+![image](https://github.com/Florence-Team-8/anomaly-detection-project/files/6863784/Detecting.Anomolous.Network.Access.Project.pdf)
+
+
 
 Hello,
 
@@ -43,6 +45,11 @@ Program ID Codes
 
 > Javascript-i had the most traffic for both the Full Stack PHP & Java programs. This makes sense since JavaScript is a highly used programming language for web > developers because it allows users to interact with web pages.  While the most accessed for Data Science was the classification overview.  The Classification      > Methodology is the most used for Supervised Learning.
 
+#### 7. Which lessons are least accessed?
+
+> Program 4 (Front End Program) was not used in the responses for the most and least accessed endpoints since it was a test group. Full Stack PHP & Java did not > have similar low accessed endpoints as they did for the most accessed endpoints. There least accessed included some Data Science pages while the lows for Data > Science were lessons that are least used in Data Science.
+
+
 #### 3. Are there students who, when active, hardly access the curriculum? If so, what information do you have about these students?
 - Most of the pings are either towards the end of the program, or immediately the day after
 - Some have a lot of pings at the beginning of the program start and stop once it hits two weeks
@@ -59,9 +66,7 @@ Program ID Codes
 > Both groups are looking at lessons that are at the beginning of the lessons. 
 > Graduates pinging early lessons makes sense. Codeup programs range from 4-6 months, and the top accessed lessons are earlier lessons. Perhaps alumni needed to look up something that they learned very early on. 
 > Both types of lessons accessed contain material that would be used quite frequently in a career.
-#### 7. Which lessons are least accessed?
 
-> Program 4 (Front End Program) was not used in the responses for the most and least accessed endpoints since it was a test group. Full Stack PHP & Java did not > have similar low accessed endpoints as they did for the most accessed endpoints. There least accessed included some Data Science pages while the lows for Data > Science were lessons that are least used in Data Science.
 
 <hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
 
