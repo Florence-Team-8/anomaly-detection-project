@@ -11,8 +11,21 @@ _________________
 
 The TRELLO board used for the planning process can be found on this link: [Trello](https://trello.com/b/LA6GxLOI/anomaly-detection)
 
-
 _________________
+
+| Column Name  | Description                                                                                  | Type                                               |
+|--------------|----------------------------------------------------------------------------------------------|----------------------------------------------------|
+| `date`       | Date and time request was made                                                               | object (transformed to dateteime for some section) |
+| `endpoint`   | Address of endpoint requested                                                                | object                                             |
+| `user_id`    | Assigned id of person making request                                                         | int64                                              |
+| `cohort_id`  | Numeric ID of cohort user belongs to. Key for `name`                                         | float64                                            |
+| `source_id`  | IP address request was made from                                                             | object                                             |
+| `name`       | Name (as string) of cohort user belongs to                                                   | object                                             |
+| `start_date` | The cohort start date                                                                        | object (transformed to datetime for some sections) |
+| `end_date`   | The cohort end date                                                                          | object (transformed to datetime for some sections) |
+| `program_id` | Numeric ID to represent what program the cohort belongs to                                   | float64                                            |
+| `is_active`  | Boolean value of whether or not the student was active in a cohort when the request was made | int64 (boolean)                                    |
+| `pings`      | Numeric column for aggregating active and inactive pings                                     | int64                                              |
 
 Program ID Codes
 1 - Full stack PHP
@@ -21,13 +34,9 @@ Program ID Codes
 4 - Front End Program
 
 
-#### 1. Which lesson appears to attract the most traffic consistently across cohorts (per program)?
+#### Which lesson appears to attract the most traffic consistently across cohorts (per program)?
 
-> - 1 (Full Stack PHP) - javascript-i    1144 page views
-> - 2 (Java) -  javascript-i 19383 views
-> - 3 (Data Science) - classification/overview     2469 page views
-
-Javascript-i had the most traffic for both the Full Stack PHP & Java programs. This makes sense since JavaScript is a highly used programming language for web developers because it allows users to interact with web pages.  While the most accessed for Data Science was the classification overview.  The Classification Methodology is the most used for Supervised Learning.
+> Javascript-i had the most traffic for both the Full Stack PHP & Java programs. This makes sense since JavaScript is a highly used programming language for web > developers because it allows users to interact with web pages.  While the most accessed for Data Science was the classification overview.  The Classification      > Methodology is the most used for Supervised Learning.
 
 #### 3. Are there students who, when active, hardly access the curriculum? If so, what information do you have about these students?
 - Most of the pings are either towards the end of the program, or immediately the day after
@@ -54,23 +63,7 @@ Javascript-i had the most traffic for both the Full Stack PHP & Java programs. T
 > Both types of lessons accessed contain material that would be used quite frequently in a career.
 #### 7. Which lessons are least accessed?
 
-The below endpoints have 34 page views each
-
-> - 1 (Full Stack PHP) 
->   • content/php_iv/classes-and-objects-ii
->   • slides/object_oriented_programming
-> - 2 (Java)
->   •  2.02.03_Power_Analysis    
->   •  3-sql/6.4-limit                           
->   •  8-clustering/5.1-kmeans-part-1                                 
->   •  Univariate_Regression_Excel                                     
-> - 3 (Data Science)
->   • 13-advanced-topics/3.8-json-responses
->   • 2-storytelling/3.5-creating-dashboards
->   • advanced-topics/developing-data-products 
-
-
-Program 4 (Front End Program) was not used in the responses for the most and least accessed endpoints since it was a test group. Full Stack PHP & Java did not have similar low accessed endpoints as they did for the most accessed endpoints. There least accessed included some Data Science pages while the lows for Data Science were lessons that are least used in Data Science.
+> Program 4 (Front End Program) was not used in the responses for the most and least accessed endpoints since it was a test group. Full Stack PHP & Java did not > have similar low accessed endpoints as they did for the most accessed endpoints. There least accessed included some Data Science pages while the lows for Data > Science were lessons that are least used in Data Science.
 
 <hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
 
