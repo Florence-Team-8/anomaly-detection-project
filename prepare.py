@@ -27,6 +27,7 @@ def make_datetime(df, col_name, set_index = False):
     return df
 
 def get_lower_and_upper_bounds(col, multiplier=1.5):
+    ''''''
     # calculate quantiles with pd.quantile()
     q1 = col.quantile(0.25)
     q3 = col.quantile(0.75)
