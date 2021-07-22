@@ -39,7 +39,9 @@ _________________
 
 > Both groups are looking at lessons that are at the beginning of the lessons. 
 
-> Graduates pinging early lessons makes sense.
+> Graduates pinging early lessons makes sense. Codeup programs range from 4-6 months, and the top accessed lessons are earlier lessons. Perhaps alumni needed to look up something that they learned very early on. 
+
+> Both types of lessons accessed contain material that would be used quite frequently in a career.
 #### 7. Which lessons are least accessed?
 
 The below endpoints have 34 page views each

@@ -57,15 +57,13 @@ def iqr_outliers(df, multiplier=1.5):
             pass
     # list comprehension that prints each outlier seperated by column
     [print('\n', key, ':\n', outliers[key]['outlier']) for key in outliers]
-    
-def make_active(df):
-    df = merge(cohorts, how = 'left', left_on = 'cohort_id', right_on = 'id')
+def make_active(df):   
     df = make_datetime(df, 'start_date')
     df = make_datetime(df, 'end_date')
     df = make_datetime(df, 'date', set_index = True)
     df = active_status(df, df.index, 'start_date', 'end_date')
     df['pings'] = 1
-    return df.drop(columns = ['Unnamed: 0','slack','created_at','updated_at','deleted_at'])
+    return df
 
 def filter_endpoints(df):
     '''
@@ -82,3 +80,4 @@ def filter_endpoints(df):
     df_final = df2[df2.endpoint.str.contains('toc|search|jpg|jpeg|svg') == False]
     
     return df_final
+
