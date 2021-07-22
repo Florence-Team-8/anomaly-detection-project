@@ -1,4 +1,4 @@
-![image](https://github.com/Florence-Team-8/anomaly-detection-project/files/6863904/Detecting.Anomolous.Network.Access.Project.pdf)
+![image](https://user-images.githubusercontent.com/80718680/126676948-7fc31166-47a0-4153-98b1-2877955ac0e1.png)
 
 
 
